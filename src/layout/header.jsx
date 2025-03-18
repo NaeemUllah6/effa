@@ -24,9 +24,9 @@ const Header = () => {
 
     return (
         <>
-            <div className={`fixed top-0 left-0 w-full bg-white transition-shadow duration-300 z-50 ${hasShadow ? 'shadow-[0px_1px_5px_rgba(0,0,0,0.1)]' : ''}`}>
-                <div className="container">
-                    <div className="flex gap-2 justify-between items-center h-[80px] md:h-[166px]">
+                <div className={`fixed top-0 left-0 w-full bg-white transition-all duration-500 z-40  ${hasShadow ? 'shadow-[0px_1px_5px_rgba(0,0,0,0.1)] py-[16px] md:py-[20px]' : 'py-4 md:py-[50px]'}`}>
+            <div className='px-[25px] md:px-[50px]'>
+                    <div className="flex gap-2 justify-between items-center">
                         <div>
                             <a href="/">
                                 <img className='h-[40px] md:h-[66px]' src={HeaderLogo} alt="Logo" />
@@ -49,18 +49,21 @@ const Header = () => {
                     } transition-transform duration-500 ease-in-out z-50`}
             >
                 <button
-                    className="absolute top-3 right-3 text-[#FFA830] text-4xl font-bold"
+                    className="absolute top-6 right-3 text-[#FFA830] text-4xl font-bold"
                     onClick={() => setIsOpen(false)}
                 >
-                    <RxCross2 className='h-[40px] md:h-[66px]' />
+                    <RxCross2 className='h-[30px] md:h-[66px]' />
                 </button>
 
                 <div className="p-5">
-                    <ul className="flex flex-col gap-4">
-                        <li className='list-none'><Link to="/" className="text-black">Home</Link></li>
-                        <li className='list-none'><Link to="/about" className="text-black">About</Link></li>
-                        <li className='list-none'><Link to="/services" className="text-black">Services</Link></li>
-                        <li className='list-none'><Link to="/contact" className="text-black">Contact</Link></li>
+                    <Link to=''>
+                        <img  className='w-20 md:w-[166px] md:h-[50px]' src={HeaderLogo} alt="" />
+                    </Link>
+                    <ul className="flex flex-col gap-4 mt-5 !ps-0">
+                        <li className='list-none ps-0 ms-0'><Link to="/" className="text-[#4C525B]">Home</Link></li>
+                        <li className='list-none ps-0 ms-0'><Link to="/about" className="text-[#4C525B]">About</Link></li>
+                        <li className='list-none ps-0 ms-0'><Link to="/services" className="text-[#4C525B]">Services</Link></li>
+                        <li className='list-none ps-0 ms-0'><Link to="/contact" className="text-[#4C525B]">Contact</Link></li>
                     </ul>
                 </div>
             </div>
@@ -68,7 +71,7 @@ const Header = () => {
             {/* Overlay */}
             {isOpen && (
                 <div
-                    className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40"
+                    className="fixed top-0 left-0 w-full h-full bg-black opacity-50 !z-40"
                     onClick={() => setIsOpen(false)}
                 ></div>
             )}

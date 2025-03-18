@@ -8,7 +8,7 @@ const Discover = () => {
             <p className='mt-2 md:mt-4 text-base font-normal fontArchivo text-white'>
             Luckily, lots of other stuff is
             </p>
-            <button className='bg-white rounded-full px-8 py-2 md:py-5 font-bold fontArchivo mt-14 w-full md:w-fit'>Discover More</button>
+            <button className='bg-white cursor-pointer hover:bg-[#FFA830] transition-all hover:text-white duration-500 rounded-full px-8 py-2 md:py-5 font-bold fontArchivo mt-14 w-full md:w-fit'>Discover More</button>
         </div>
     </div>
   )

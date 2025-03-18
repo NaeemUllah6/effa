@@ -30,10 +30,11 @@ const Footer = () => {
 
   return (
     <div className="bg-[#E5E7EB] px-4 py-6 rounded-tr-xl rounded-tl-xl min-h-[300px]">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-6 h-full">
+      <div className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-6  gap-6 h-full">
 
         <div className="col-span-2 flex flex-col justify-between h-full gap-5">
-          <img height={50} width={150} src={FooterLogo} alt="Footer Logo" />
+         <Link to=''>
+         <img height={50} width={150} src={FooterLogo} alt="Footer Logo" /></Link>
         </div>
 
 
