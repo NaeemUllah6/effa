@@ -28,6 +28,10 @@ ul {
     width: 40px;
     background-repeat: no-repeat;
 }
+.headerCOntainer{
+    max-width: 1440px!important;
+    margin: 0 auto !important;
+}
 @media(max-width:768px){
     .container{
         padding: 0 40px;

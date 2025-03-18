@@ -24,20 +24,22 @@ const Header = () => {
 
     return (
         <>
-                <div className={`fixed top-0 left-0 w-full bg-white transition-all duration-500 z-40  ${hasShadow ? 'shadow-[0px_1px_5px_rgba(0,0,0,0.1)] py-[16px] md:py-[20px]' : 'py-4 md:py-[50px]'}`}>
-            <div className='px-[25px] md:px-[50px]'>
-                    <div className="flex gap-2 justify-between items-center">
-                        <div>
-                            <a href="/">
-                                <img className='h-[40px] md:h-[66px]' src={HeaderLogo} alt="Logo" />
-                            </a>
-                        </div>
-                        <div className="flex items-center justify-end gap-7">
-                            <Button className="hidden md:block hover:bg-[#FFA830] hover:text-white duration-500">
-                                Login
-                            </Button>
+            <div className=''>
+                <div className={`fixed top-0 left-0 w-full bg-white transition-all duration-500 z-40  ${hasShadow ? 'shadow-[0px_1px_5px_rgba(0,0,0,0.1)] py-[16px] md:py-[16px]' : 'py-4 md:py-[50px]'}`}>
+                    <div className='px-[25px] md:px-[50px] headerCOntainer'>
+                        <div className="flex gap-2 justify-between items-center">
+                            <div>
+                                <a href="/">
+                                    <img className='h-[40px] md:h-[66px]' src={HeaderLogo} alt="Logo" />
+                                </a>
+                            </div>
+                            <div className="flex items-center justify-end gap-7">
+                                <Button className="hidden md:block hover:bg-[#FFA830] hover:text-white duration-500">
+                                    Login
+                                </Button>
 
-                            <img className='w-[40px] md:w-full' src={Hamburger} onClick={() => setIsOpen(true)} alt="Menu" />
+                                <img className='w-[40px] md:w-full' src={Hamburger} onClick={() => setIsOpen(true)} alt="Menu" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -57,7 +59,7 @@ const Header = () => {
 
                 <div className="p-5">
                     <Link to=''>
-                        <img  className='w-20 md:w-[166px] md:h-[50px]' src={HeaderLogo} alt="" />
+                        <img className='w-20 md:w-[166px] md:h-[50px]' src={HeaderLogo} alt="" />
                     </Link>
                     <ul className="flex flex-col gap-4 mt-5 !ps-0">
                         <li className='list-none ps-0 ms-0'><Link to="/" className="text-[#4C525B]">Home</Link></li>
