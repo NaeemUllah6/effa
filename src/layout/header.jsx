@@ -66,6 +66,7 @@ const Header = () => {
                         <li className='list-none ps-0 ms-0'><Link to="/about" className="text-[#4C525B]">About</Link></li>
                         <li className='list-none ps-0 ms-0'><Link to="/services" className="text-[#4C525B]">Services</Link></li>
                         <li className='list-none ps-0 ms-0'><Link to="/contact" className="text-[#4C525B]">Contact</Link></li>
+                        <Button className='block md:hidden !w-fit px-10'>Login</Button>
                     </ul>
                 </div>
             </div>
