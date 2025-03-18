@@ -41,4 +41,7 @@ ul {
     .container{
         padding: 0 20px;
     }
+    .before::before{
+        display: none;
+    }
 }
