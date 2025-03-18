@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+  }
+  ul li::marker {
+    font-size: 12px; 
+    color: #4C525B; 
+  }
+
+.fontArchivo {
+    font-family: 'Archivo', sans-serif !important;
+}
+.before::before{
+    content: '';
+    background-image: url('../src/assets/svgs/spotify.svg');
+    position: absolute;
+    top: 12px;
+    right:5px;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+}
+@media(max-width:768px){
+    .container{
+        padding: 0 40px;
+    }
+}
+@media(max-width:521px){
+    .container{
+        padding: 0 20px;
+    }
+}
